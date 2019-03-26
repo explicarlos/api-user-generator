@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang=es>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>App Lista de la compra</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/mi.css" />
+        <script src="js/main.js" ></script>
+    </head>
+    <body>
+        <div id=contenedor class="container miestilo" >
+            <div id=cabecera class="row cabecera justify-content-center mt-5" >
+                <h1 id=titulo1 >
+                    <i class="material-icons" style="font-size: 1em;" >shopping_cart</i>
+                    Lista de la compra
+                </h1>
+            </div>
+            <form id=formulario >
+                <div id=botones class="row" >
+                    <div class="col-4" >
+                        <input
+                            id=articulo
+                            type=text
+                            class="form-control"
+                            placeholder="Indica un artículo a comprar"
+                        />
+                    </div>
+                    <div class="col-4" >
+                        <input
+                            id=cantidad
+                            type=number
+                            class="form-control"
+                            placeholder="Cantidad"
+                        />
+                    </div>
+                    <div class="col-2" >
+                        <select id=prioridad class="form-control" >
+                            <option value=Baja selected >Baja</option>
+                            <option value=Alta >Alta</option>
+                            <option value=Urgente >Urgente</option>
+                        </select>
+                    </div>
+                    <div class="col-2" >
+                        <button id=agregar class="btn btn-primary" >Añadir</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <hr/>
+        <section id=listacompra ></section>
+    </body>
+</html>
+
